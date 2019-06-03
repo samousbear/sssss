@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config >
+	<property name="jdbcUrl">jdbc:mysql://localhost:3306/usersystem?characterEncoding=utf8</property>
+	<property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="user">root</property>
+	<property name="password">521314</property>
+	 <property name="initialPoolSize">3</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">10</property>  
+        <property name="minPoolSize">1</property>  
+        <property name="maxStatements">200</property> 
+        <!-- 无空闲连接可用时，可一次性创建新连接的数量 -->
+        <property name="acquireIncrement">1</property>
+        <!-- 获取数据库连接失败后重复尝试的次数 -->
+        <property name="acquireRetryAttempts">3</property>
+        <!-- 两次连接的间隔时间，单位为毫秒 -->
+        <property name = "acquireRetryDelay">500</property>
+        
+        
+        <named-config name="usersystem">
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/usersystem?characterEncoding=utf8</property>
+	<property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="user">root</property>
+	<property name="password">521314</property>
+	 <property name="initialPoolSize">3</property>  
+        <property name="maxIdleTime">30</property>  
+        <property name="maxPoolSize">10</property>  
+        <property name="minPoolSize">1</property>  
+        <property name="maxStatements">200</property> 
+        <!-- 无空闲连接可用时，可一次性创建新连接的数量 -->
+        <property name="acquireIncrement">1</property>
+        <!-- 获取数据库连接失败后重复尝试的次数 -->
+        <property name="acquireRetryAttempts">3</property>
+        <!-- 两次连接的间隔时间，单位为毫秒 -->
+        <property name = "acquireRetryDelay">500</property>
+        </named-config> 
+	</default-config>
+	</c3p0-config>
+	
+
